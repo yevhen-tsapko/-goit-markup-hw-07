@@ -1,0 +1,23 @@
+.benefits-list {
+  @extend %grid;
+}
+.thumb {
+  margin-bottom: 30px;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+}
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.benefits-title
+ {@extend %item-title;
+  color: inherit;
+  margin-bottom: 10px;}
+
+.benefits-text {
+  line-height: 1.71;
+  color: var(--text-color);
+}

@@ -1,0 +1,22 @@
+.doing {
+  padding-top: 0;
+}
+
+.products-list {
+  display: flex;
+  gap: 30px;
+}
+.products-item {
+  position: relative;
+}
+.product-text {@extend %item-title;
+  position: absolute;
+  bottom: 0;
+ 
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+   padding: 27px 0;
+ 
+text-align: center;
+
+}
