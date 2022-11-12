@@ -1,15 +1,15 @@
-.doing {
+.products {
   padding-top: 0;
 }
 
-.products-list {
+.products__list {
   display: flex;
   gap: 30px;
 }
-.products-item {
+.products__item {
   position: relative;
 }
-.product-text {@extend %item-title;
+.products__text {@extend %item-title;
   position: absolute;
   bottom: 0;
  
@@ -18,5 +18,4 @@
    padding: 27px 0;
  
 text-align: center;
-
 }

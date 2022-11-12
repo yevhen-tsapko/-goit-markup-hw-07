@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin: 0 auto 30px;
   width: 696px;
 
@@ -25,6 +25,6 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.hero-btn {@extend %btn;
+.hero__btn {@extend %btn;
   padding: 10px 32px;
 }

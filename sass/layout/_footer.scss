@@ -3,12 +3,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container {
+.container__footer {
   display: flex;
- 
-  align-items: baseline;
+   align-items: baseline;
 }
-.footer .logo {
+.logo__footer {
   color: #fff;
 }
 .adress {
@@ -16,7 +15,7 @@
   font-style: normal;
   line-height: 1.71;
 }
-.adress-item:not(:last-child) {
+.adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
 .mail {
@@ -26,7 +25,7 @@
 &:focus {
   color: var(--focus-color);
 }}
-.adress-link {
+.adress__link {
   transition:color var(--transition);
   color: rgba(255, 255, 255, 0.6);
 &:hover,
@@ -34,31 +33,31 @@
   color: var(--focus-color);
 }}
 
-.join {margin-left: 70px;}
+.join {margin-left: auto;}
 
-.join-title,
-.subscribe-title {
+.join__slogan,
+.subscribe__slogan {
   @extend %item-title;
   margin-bottom: 20px;
   color: #ffffff;
 }
-.join .social-item {
+.social__item--dark {
   transition:background-color var(--transition);
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
-.join .social-item:hover,
-.join .social-item:focus {
+&:hover,
+&:focus {
   background-color: var(--focus-color);
 }
-.join .social-icon {
+.social__icon--white {
   fill: currentColor;
 }
 .subscribe {
   margin-left: 93px;
 }
 
-.subscribe-label {
+.subscribe__label {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -70,7 +69,7 @@
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
 }
-.email-input {
+.subscribe__input {
   background-color: transparent;
   border: none;
   width: 100%;
@@ -83,20 +82,17 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 outline: none;
 }
-.subscribe-button {
+.subscribe__button {
   @extend %btn;
-  // width:200px;
-  // height: 50px;
-  margin-left: 12px;
+   margin-left: 12px;
   padding: 10px 28px;
   
     display: inline-flex;
     gap: 10px;
    justify-content: center;
-   
-     }
+        }
 
-.send-icon {
+.subscribe__icon {
   width: 24px;
   height: 24px;
   fill: currentColor;
