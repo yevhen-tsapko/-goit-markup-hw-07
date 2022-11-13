@@ -100,7 +100,7 @@ img {
   text-transform: uppercase;
 }
 
-.portfolio-list, .client, .team__list, .benefits, .contacts {
+.projects-grid, .client, .team__list, .benefits, .contacts {
   display: flex;
   gap: 30px;
 }
@@ -391,11 +391,11 @@ img {
   fill: var(--focus-color);
 }
 
-.current {
+.nav__link--underlined {
   position: relative;
   color: var(--focus-color);
 }
-.current::after {
+.nav__link--underlined::after {
   position: absolute;
   bottom: 0;
   display: block;
@@ -435,7 +435,7 @@ img {
   padding: 10px 32px;
 }
 
-.thumb {
+.benefits__thumb {
   margin-bottom: 30px;
   height: 120px;
   padding: 25px 100px;
@@ -614,19 +614,10 @@ img {
   color: #ffffff;
 }
 
-.join .social__item {
+.social__item--dark {
   transition: background-color var(--transition);
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-}
-
-.join .social__item:hover,
-.join .social__item:focus {
-  background-color: var(--focus-color);
-}
-
-.join .social__icon {
-  fill: currentColor;
 }
 
 .subscribe {
@@ -672,18 +663,18 @@ img {
   fill: currentColor;
 }
 
-.portfolio-filter {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   padding: 0;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
   padding: 6px 22px;
   font-family: inherit;
@@ -696,36 +687,32 @@ img {
   color: var(--title-text-color);
   background-color: #f5f4fa;
 }
-.filter-button.active, .filter-button:hover, .filter-button:focus {
+.filter__button.filter__button--active, .filter__button:hover, .filter__button:focus {
   color: #fff;
   background: var(--focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list {
+.projects-grid {
   flex-wrap: wrap;
   padding: 0;
 }
 
-.portfolio-item {
+.project {
   width: 370px;
   transition: box-shadow var(--transition);
   display: block;
 }
-.portfolio-item:hover, .portfolio-item:focus {
+.project:hover, .project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.portfolio-item-description {
+.project__img {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-description-text {
+.project__overlay {
   transition: transform var(--transition);
   position: absolute;
   top: 100%;
@@ -736,16 +723,16 @@ img {
   font-size: 18px;
   line-height: 1.5555555556;
 }
-.portfolio-item:hover .portfolio-description-text, .portfolio-item:focus .portfolio-description-text {
+.project:hover .project__overlay, .project:focus .project__overlay {
   transform: translateY(-100%);
 }
 
-.portfolio-info {
+.project__info {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
-.portfolio-title {
+.project__title {
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -754,7 +741,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.portfolio-text {
+.project__text {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
